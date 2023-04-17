@@ -116,7 +116,7 @@ def dl_playlist(play_list,SAVE_PATH = os.getcwd()):
 def dl_single_video(link,SAVE_PATH = os.getcwd()):
   #The purpose of this program is to download a single video a put it ontp the folder of choice
   #By default the playlist will download in the current directory unless spec
-  choice = 'y' #input("Video Restrictions?y/n?")
+  choice = input("Video Restrictions?y/n?")
   yt = ''
   if choice == "y":
     yt = YouTube(link,
